@@ -17,7 +17,7 @@ const Reviews = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await fetch("http://localhost:4000/reviews");
+        const response = await fetch("https://ecomerce-backend-dun.vercel.app/reviews");
 
         if (!response.ok) {
           throw new Error("Failed to fetch reviews");
@@ -68,7 +68,7 @@ const Reviews = () => {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:4000/reviews", {
+      const response = await fetch("https://ecomerce-backend-dun.vercel.app/reviews", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
