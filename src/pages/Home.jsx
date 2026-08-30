@@ -55,7 +55,7 @@ const Home = () => {
   id={product.id}   // yahan _id use karo
   title={product.title}
   price={product.price}
-  image={`http://localhost:4000/uploads/${product.image}`}
+  image={`https://ecomerce-backend-dun.vercel.app/uploads/${product.image}`}
   rating={product.rating}
 />
     ))}
@@ -77,7 +77,7 @@ const Home = () => {
   id={product.id}   // yahan _id use karo
   title={product.title}
   price={product.price}
-  image={`http://localhost:4000/uploads/${product.image}`}
+  image={`https://ecomerce-backend-dun.vercel.app/uploads/${product.image}`}
   rating={product.rating}
 />
     ))}
