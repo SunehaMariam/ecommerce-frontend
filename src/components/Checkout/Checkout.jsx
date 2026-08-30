@@ -72,7 +72,7 @@ const Checkout = () => {
         paymentMethod: formData.paymentMethod,
       };
 
-      const response = await fetch("http://localhost:4000/order/orders", {
+      const response = await fetch("https://ecomerce-backend-dun.vercel.app/order/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
