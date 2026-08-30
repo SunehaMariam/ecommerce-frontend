@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+.grid-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.grid-section h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  margin: 0 0 35px;
+  color: #000;
+  letter-spacing: -1px;
+}
+.grid-container {
+  width: 100%;
+  background: #f1f1f1;
+  padding: 38px 30px 44px;
+  display: grid;
+  grid-template-columns: 0.62fr 1fr;
+  grid-template-rows: 242px 242px;
+  column-gap: 5px;
+  row-gap: 6px;
+  border-radius: 0 0 14px 14px;
+} /* ========================= COMMON CARD ========================= */
+.grid-card {
+  position: relative;
+  background: #fffbfb;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 242px;
+} /* ========================= CARD TEXT ========================= */
+.grid-card h3 {
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  margin: 0;
+  z-index: 5;
+  color: #000000;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+} /* ========================= IMAGES ========================= */
+.grid-card img {
+  position: absolute;
+  display: block;
+  max-width: none;
+  object-fit: contain;
+} /* ========================= CASUAL ========================= */
+.casual-card {
+  grid-column: 1;
+  grid-row: 1;
+  width: 407px;
+    
+}
+.casual-card img {
+ height: 400px;
+  width: auto;
+top: 0px;
+  left: 20%;
+  bottom: -16px;
+} /* ========================= FORMAL ========================= */
+.formal-card {
+  grid-column: 2;
+  grid-row: 1;
+  width: 494px;
+  right: 30%;
+}
+.formal-card img {
+  height: 465px;
+  width: auto;
+  left: 65px;
+  top:2px;
+  bottom: -18px;
+} /* ========================= PARTY ========================= */
+.party-card {
+  grid-column: 1;
+  grid-row: 2;
+  width :584px;
+}
+.party-card img {
+  height: 460px;
+  width: auto;
+  left: 55px;
+    top:2px;
+  bottom: -18px;
+} /* ========================= GYM ========================= */
+.gym-card {
+  grid-column: 2;
+  grid-row: 2;
+  width: 355px;
+}
+.gym-card img {
+  height: 360px;
+  width: auto;
+  left: 180px;
+  top: 2px;
+  bottom: -18px;
+} /* ========================= RESPONSIVE ========================= */
+@media (max-width: 900px) {
+  .grid-container {
+    padding: 25px 20px 30px;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 210px 210px;
+    gap: 15px;
+  }
+  .grid-card {
+    height: 210px;
+  }
+  .grid-card h3 {
+    top: 16px;
+    left: 18px;
+    font-size: 22px;
+  }
+  .casual-card img {
+    height: 225px;
+    left: 0;
+  }
+  .formal-card img {
+    height: 230px;
+    left: 40px;
+  }
+  .party-card img {
+    height: 230px;
+    left: 30px;
+  }
+  .gym-card img {
+    height: 225px;
+    left: 100px;
+  }
+
+  .casual-card,
+  .formal-card,
+  .party-card,
+  .gym-card {
+    width: 100%;
+    right: auto;
+  }
+} /* ========================= MOBILE ========================= */
+@media (max-width: 600px) {
+  .grid-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+    gap: 15px;
+  }
+  .grid-card {
+    height: 200px;
+  }
+  .casual-card,
+  .formal-card,
+  .party-card,
+  .gym-card {
+    grid-column: 1;
+    width: 100%;
+    right: auto;
+  }
+  .casual-card {
+    grid-row: 1;
+  }
+  .formal-card {
+    grid-row: 2;
+  }
+  .party-card {
+    grid-row: 3;
+  }
+  .gym-card {
+    grid-row: 4;
+  }
+  .casual-card img {
+    height: 215px;
+    left: 5px;
+  }
+  .formal-card img {
+    height: 220px;
+    left: 50px;
+  }
+  .party-card img {
+    height: 220px;
+    left: 40px;
+  }
+  .gym-card img {
+    height: 220px;
+    left: 80px;
+  }
+}
+
+/* ========================= EXTRA SMALL MOBILE ========================= */
+@media (max-width: 480px) {
+  .grid-section {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  .grid-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .grid-container {
+    padding: 15px;
+    grid-template-rows: repeat(4, 170px);
+    gap: 12px;
+  }
+
+  .grid-card {
+    height: 170px;
+  }
+
+  .grid-card h3 {
+    top: 12px;
+    left: 14px;
+    font-size: 18px;
+  }
+
+  .casual-card,
+  .formal-card,
+  .party-card,
+  .gym-card {
+    width: 100%;
+    right: auto;
+  }
+
+  .casual-card img {
+    height: 180px;
+    left: 0;
+    top: 0;
+  }
+
+  .formal-card img {
+    height: 185px;
+    left: 30px;
+    top: 0;
+  }
+
+  .party-card img {
+    height: 185px;
+    left: 20px;
+    top: 0;
+  }
+
+  .gym-card img {
+    height: 185px;
+    left: 50px;
+    top: 0;
+  }
+}

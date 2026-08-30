@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+  background: #f0f0f0;
+  padding: 20px 52px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =====================================
+   NEWSLETTER
+===================================== */
+
+.newsletter {
+  width: 100%;
+  min-height: 90px;
+
+  background: #000;
+
+  border-radius: 12px;
+
+  padding: 17px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter-title h2 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 21px;
+  line-height: 1.05;
+
+  font-weight: 900;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* Newsletter form */
+
+.newsletter-form {
+  width: 175px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.email-box {
+  width: 100%;
+  height: 25px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 10px;
+}
+
+.email-box span {
+  color: #999;
+  font-size: 9px;
+}
+
+.email-box input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  font-size: 7px;
+
+  padding-left: 6px;
+}
+
+.email-box input::placeholder {
+  color: #999;
+}
+
+.newsletter-form button {
+  width: 100%;
+  height: 25px;
+
+  border: none;
+
+  background: white;
+
+  border-radius: 20px;
+
+  font-size: 7px;
+
+  cursor: pointer;
+}
+
+
+/* =====================================
+   MAIN FOOTER
+===================================== */
+
+.footer-content {
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1fr
+    1fr;
+
+  column-gap: 45px;
+
+  padding: 20px 0 25px;
+}
+
+
+/* =====================================
+   BRAND
+===================================== */
+
+.footer-brand h2 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+
+  font-weight: 900;
+
+  letter-spacing: -1px;
+}
+
+.footer-brand p {
+  width: 180px;
+
+  margin: 0;
+
+  color: #777;
+
+  font-size: 8px;
+
+  line-height: 1.45;
+}
+
+
+/* =====================================
+   SOCIAL ICONS
+===================================== */
+
+.social-icons {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 14px;
+}
+
+.social-icons span {
+  width: 15px;
+  height: 15px;
+
+  background: white;
+
+  border: 1px solid #ddd;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 7px;
+
+  color: #000;
+}
+
+
+/* =====================================
+   FOOTER COLUMNS
+===================================== */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  margin: 0 0 12px;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #000;
+}
+
+.footer-column a {
+  text-decoration: none;
+
+  color: #777;
+
+  font-size: 8px;
+
+  margin-bottom: 9px;
+}
+
+.footer-column a:hover {
+  color: #000;
+}
+
+
+/* =====================================
+   BOTTOM
+===================================== */
+
+.footer-bottom {
+  border-top: 1px solid #d8d8d8;
+
+  min-height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 7px;
+}
+
+
+/* =====================================
+   PAYMENT METHODS
+===================================== */
+
+.payment-methods {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+.payment-methods span {
+  height: 15px;
+
+  min-width: 26px;
+
+  padding: 0 5px;
+
+  background: white;
+
+  border: 1px solid #ddd;
+
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 6px;
+
+  font-weight: 600;
+}
+
+.visa {
+  color: #1434cb;
+}
+
+.master {
+  color: #e90000;
+}
+
+.paypal {
+  color: #003087;
+}
+
+.apple {
+  color: #000;
+}
+
+.gpay {
+  color: #4285f4;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 800px) {
+
+  .footer {
+    padding: 20px 30px 0;
+  }
+
+  .footer-content {
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    row-gap: 25px;
+  }
+
+  .newsletter {
+    padding: 17px 25px;
+  }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 15px 20px 0;
+  }
+
+  .newsletter {
+    min-height: auto;
+
+    padding: 22px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .newsletter-title h2 {
+    font-size: 19px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px 20px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand p {
+    width: 220px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 15px 0;
+  }
+
+}

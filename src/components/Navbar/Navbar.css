@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+  gap: 35px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Navbar left section */
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+/* SHOP.CO */
+.hero-title {
+  font-family: "Integral CF", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+/* Links */
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: #777;
+}
+
+/* Search */
+nav input {
+  flex: 1;
+  max-width: 550px;
+  height: 44px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+nav input::placeholder {
+  color: #777;
+}
+
+/* Icons */
+nav i {
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+nav i:hover {
+  transform: scale(1.1);
+}
+
+/* 👇 naya - icons group */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 👇 naya - hamburger icon, by default hidden (sirf mobile pe show hoga) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger i {
+  font-size: 26px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  nav {
+    padding: 0 3%;
+    gap: 20px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    height: auto;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    position: relative;
+    row-gap: 12px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+    order: 1;
+  }
+
+  .nav-icons {
+    order: 2;
+    margin-left: auto;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: block;
+    order: 3;
+  }
+
+  /* 👇 search bar apni poori alag row mein, sabse neeche */
+  nav input {
+    order: 4;
+    max-width: none;
+    width: 100%;
+    height: 42px;
+    margin-top: 0;
+    border: 1px solid #e0e0e0;
+  }
+
+  nav i {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 15px 20px;
+    gap: 15px !important;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+    order: 5;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    list-style: none;
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.cart-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: black;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
