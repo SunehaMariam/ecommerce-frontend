@@ -3,7 +3,7 @@ import "./ProductDetails.css";
 import { useCart } from "../../context/CartContext"; // 👈 naya import
 
 const ProductDetails = ({ product }) => {
-  const productImage = `http://localhost:4000/uploads/${product.image}`;
+  const productImage = `https://ecomerce-backend-dun.vercel.app/uploads/${product.image}`;
 
   const [selectedImage, setSelectedImage] = useState(productImage);
   const [selectedColor, setSelectedColor] = useState(0);
