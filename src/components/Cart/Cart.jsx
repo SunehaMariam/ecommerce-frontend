@@ -89,7 +89,7 @@ const Cart = () => {
                   {/* Product Image */}
                   <div className="cart-product-image">
                     <img
-                      src={`http://localhost:4000/uploads/${item.image}`}
+                      src={`https://ecomerce-backend-dun.vercel.app/uploads/${item.image}`}
                       alt={item.title}
                     />
                   </div>
