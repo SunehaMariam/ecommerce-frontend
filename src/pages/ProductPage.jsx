@@ -19,7 +19,7 @@ const ProductPage = () => {
       try {
         setLoading(true); // 👈 fetch shuru hone par true
 
-        const response = await fetch("http://localhost:4000/product/products");
+        const response = await fetch("https://ecomerce-backend-dun.vercel.app/product/products");
 
         if (!response.ok) {
           throw new Error("Failed to fetch products");
