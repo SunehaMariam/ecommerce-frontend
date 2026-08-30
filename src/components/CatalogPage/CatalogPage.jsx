@@ -321,7 +321,7 @@ const CatalogPage = () => {
       try {
         setLoading(true);
 
-        const response = await fetch("http://localhost:4000/catalog/products");
+        const response = await fetch("https://ecomerce-backend-dun.vercel.app/catalog/products");
 
         if (!response.ok) {
           throw new Error("Failed to fetch catalog products");
