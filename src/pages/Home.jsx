@@ -15,7 +15,7 @@ const Home = () => {
     const getProducts = async () => {
       try {
         const response = await fetch(
-          "http://localhost:4000/product/products"
+          "https://ecomerce-backend-dun.vercel.app/product/products"
         );
 
         if (!response.ok) {
