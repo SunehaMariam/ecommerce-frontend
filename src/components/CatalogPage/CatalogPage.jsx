@@ -72,7 +72,7 @@ const ProductCard = ({ product }) => {
     <div className="catalog-product-card">
       <div className="catalog-product-image">
         <img
-          src={`http://localhost:4000/uploads/${product.image}`}
+          src={`https://ecomerce-backend-dun.vercel.app/uploads/${product.image}`}
           alt={product.title}
           onError={(e) => {
             e.currentTarget.style.display = "none";
