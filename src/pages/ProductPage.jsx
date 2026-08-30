@@ -88,7 +88,7 @@ const ProductPage = () => {
               id={product.id}
               title={product.title}
               price={product.price}
-              image={`http://localhost:4000/uploads/${product.image}`}
+              image={`https://ecomerce-backend-dun.vercel.app/uploads/${product.image}`}
               rating={product.rating}
             />
           ))}
