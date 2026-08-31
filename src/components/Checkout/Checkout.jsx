@@ -248,7 +248,7 @@ const Checkout = () => {
                 key={`${item.id}-${item.selectedSize}-${item.selectedColor}-${index}`}
               >
                 <img
-                  src={`http://localhost:4000/uploads/${item.image}`}
+                  src={`https://ecomerce-backend-dun.vercel.app/uploads/${item.image}`}
                   alt={item.title}
                   className="checkout-item-image"
                 />
